@@ -36,8 +36,8 @@ add_library(visionalgo SHARED ${SRC_FILES} ${INCLUDE_FILES})
 )
 
 # 创建 Visual Studio 筛选器
-source_group("Include" FILES ${INCLUDE_FILES})
-source_group("Source" FILES ${SRC_FILES})
+source_group("include" FILES ${INCLUDE_FILES})
+source_group("src" FILES ${SRC_FILES})
 
 # 设置输出目录
 set_target_properties(visionalgo PROPERTIES

@@ -43,4 +43,8 @@ include(cmake/findqt.cmake)
 # 添加子目录
 add_subdirectory(visionalgo)
 add_subdirectory(unittest)
-add_subdirectory(algodemo)
+add_subdirectory(apidemotest)
+add_subdirectory(render2d)
+add_subdirectory(visionengine)
+add_subdirectory(customwidget)
+
