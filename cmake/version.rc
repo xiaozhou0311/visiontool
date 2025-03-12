@@ -1,0 +1,31 @@
+ 1 VERSIONINFO
+ FILEVERSION ${VERSION_MAJOR}, ${VERSION_MINOR}, ${VERSION_PATCH}
+ PRODUCTVERSION ${VERSION_MAJOR}, ${VERSION_MINOR}, ${VERSION_PATCH}
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x0L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "FileDescription", "${COMPANY_NAME}"
+            VALUE "FileVersion", "${VERSION_MAJOR}, ${VERSION_MINOR}, ${VERSION_PATCH}"
+            VALUE "InternalName", "${PRODUCT_NAME}"
+            VALUE "LegalCopyright", "${LegalCopyRight}"
+            VALUE "OriginalFilename", "JRSAOI.exe"
+            VALUE "ProductName", "${PRODUCT_NAME}"
+            VALUE "ProductVersion", "${VERSION_MAJOR}, ${VERSION_MINOR}, ${VERSION_PATCH},${VERSION_REVISION}"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0804, 1200
+    END
+END
